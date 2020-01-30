@@ -7,28 +7,28 @@ public class TCPClient{
 			String sentence;
 			String answer;
 		
-			// Cria Stream de entrada
+			// Create input Stream
 			BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 
-			// Cria socket Client, conecta ao servidor
+			// Create Client socket, conects to the servidor
 			Socket clientSocket = new Socket("192.168.0.5", 6787);
 			System.out.println("Conected to server!");
 
-			// Cria stream de saida, ligado ao socket
+			// Cria output stream, bonded to socket
 			DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 
-			// Cria stream de entrada ligado ao socket
+			// Cria input stream, bonded to socket
 			BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
 			while(true){
 				System.out.print("Client: ");
 				sentence = inFromUser.readLine();
 
-				// Envia linha para o servidor
+				// Write line to the server
 				outToServer.writeBytes(sentence + '\n');
 				answer = inFromServer.readLine();
 
-				// Ler linha do servidor
+				// Read line from servidor
 				System.out.println("Server: " + answer);
 				
 				if(answer.equals("EXIT") || sentence.equals("EXIT")){
@@ -39,7 +39,7 @@ public class TCPClient{
 			}
 			
 		}catch(IOException IOE){
-			System.out.println("Não foi possivel realizar conexao.");
+			System.out.println("Impossible to stablish connection.");
 		}
 	}
 }
