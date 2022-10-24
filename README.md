@@ -4,7 +4,7 @@ Examples of how to build TCP Sockets connections in several languages.
 
 # About this Project
 
-This project's goal is to build a simple chat application using TCP Sockets Connections in several languages (Java, Python and C++). It is necessary to have two computers on the same network, or a virtual machine configured. One computer will play the server side and the other plays the client side.
+This project's goal is to build a simple chat application using TCP Sockets Connections in several languages (Java, Python and C++). It is necessary to have two computers in the same network, or a virtual machine configured. One computer will play the server side and the other plays the client side.
 
 **Note:** It is important to run server first, and then run the client. Otherwise, client will never be able to make a connection.
 
