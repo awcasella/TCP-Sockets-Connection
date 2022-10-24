@@ -9,9 +9,13 @@ public class TCPClient{
 		
 			// Create input Stream
 			BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+			
+			// Getting server address
+			String serverIpAddress = "192.168.15.6"; // Modify with the ip address of the server
+			Integer serverPort = 6787; // Doesn't need to be modified
 
-			// Create Client socket, conects to the servidor
-			Socket clientSocket = new Socket("192.168.0.5", 6787);
+			// Create Client socket, conects to the server
+			Socket clientSocket = new Socket(serverIpAddress, serverPort);
 			System.out.println("Conected to server!");
 
 			// Cria output stream, bonded to socket
