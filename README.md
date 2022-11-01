@@ -1,6 +1,6 @@
 # TCP Sockets Connection
 
-Examples of how to build TCP Sockets connections in several languages.
+Examples of how to build TCP Sockets connections in Java language.
 
 # About this Project
 
@@ -12,7 +12,7 @@ This project's goal is to build a simple chat application using TCP Sockets Conn
 
 **Prerequisites**
 
-To run this project, you'll need to have Java, Python or C++ installed. Depends on your interests.
+To run this project, you'll need to have Java installed.
 
 **Installing**
 
@@ -46,6 +46,7 @@ Running with Java (on client side):
 
 ![](ScreenshotJava.png)
 
+<!---
 # Python
 
 Installing Python
@@ -64,3 +65,4 @@ Installing C++
 
 # References
 - Put some
+-->
